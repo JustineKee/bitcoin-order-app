@@ -16,10 +16,9 @@ branches:
    - development
 before_script:
   - npm install -g @angular/cli
-  - export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start
 
 script:
-  - export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build
+  - export SET NODE_OPTIONS=--openssl-legacy-provider
   - ng build --prod --base-href https://JustineKee.github.io/bitcoin-order-app/
 
 deploy:
